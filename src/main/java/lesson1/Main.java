@@ -83,7 +83,8 @@ public class Main {
             System.out.print(year + " этод год не високосный\n");
         }
     }
-    /*private static boolean isLeapYear(int year) {
+    /*
+    private static boolean isLeapYear(int year) {
         return year % 400 == 0 || (year % 4 == 0 && year % 100 != 0);
     }*/
 
