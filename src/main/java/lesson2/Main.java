@@ -88,7 +88,7 @@ public class Main {
     6. Написать метод, в который передается не пустой одномерный целочисленный массив, метод должен вернуть true,
     если в массиве есть место, в котором сумма левой и правой части массива равны.
     */
-    static boolean isCheckBalance (int[] arr) {
+    static boolean isCheckBalance(int[] arr) {
         int arrSum = 0;
         for (int i : arr) {
             arrSum += i;
@@ -101,11 +101,5 @@ public class Main {
             }
         }
         return false;
-    }
-
-    static void shiftArray () {
-        int size = 10;
-        int[] arr = {1,2,3,4,5,6};
-
     }
 }
