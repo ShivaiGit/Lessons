@@ -9,6 +9,8 @@ public class Main {
         arrTask3();
         arrTask4();
         arrTask5();
+        System.out.println(isCheckBalance(new int[]{2, 2, 2, 1, 2, 2, 10, 1}));
+
     }
 
     /*
@@ -69,16 +71,41 @@ public class Main {
         int[] arr = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
         /*int max = 0;
         int min = arr[0];
-        for (int j : arr) {
-            if (j > max) {
-                max = j;
+        for (int i : arr) {
+            if (i > max) {
+                max = i;
             } else {
-                min = j;
+                min = i;
             }
         }*/
         Arrays.sort(arr);
         int min = arr[0];
         int max = arr.length - 1;
         System.out.println("Максимальный элемент = " + max + ". Mинимальный элемент = " + min);
+    }
+
+    /*
+    6. Написать метод, в который передается не пустой одномерный целочисленный массив, метод должен вернуть true,
+    если в массиве есть место, в котором сумма левой и правой части массива равны.
+    */
+    static boolean isCheckBalance (int[] arr) {
+        int arrSum = 0;
+        for (int i : arr) {
+            arrSum += i;
+        }
+        int rightSum = 0;
+        for (int i : arr) {
+            rightSum += i;
+            if (rightSum == arrSum - rightSum) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    static void shiftArray () {
+        int size = 10;
+        int[] arr = {1,2,3,4,5,6};
+
     }
 }
