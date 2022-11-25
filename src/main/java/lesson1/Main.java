@@ -31,7 +31,7 @@ public class Main {
     Задача №2 Написать метод вычисляющий выражение a * (b + (c / d)) и возвращающий результат,
     где a, b, c, d – входные параметры этого метода.
      */
-    public static int result(int a, int b, int c, int d) {
+    private static int result(int a, int b, int c, int d) {
         return a * (b + (c / d));
     }
 
@@ -40,7 +40,7 @@ public class Main {
     Задача №3 Написать метод, принимающий на вход два числа, и проверяющий что их сумма лежит в пределах от 10 до 20(включительно),
     если да – вернуть true, в противном случае – false;
      */
-    public static boolean isNegativeOrPositive(int a, int b) {
+    private static boolean isNegativeOrPositive(int a, int b) {
         return a + b >= 10 && a + b <= 20;
     }
 
@@ -48,7 +48,7 @@ public class Main {
     метод должен напечатать в консоль положительное ли число передали, или отрицательное;
     Замечание: ноль считаем положительным числом.
      */
-    public static void printNegativeOrPositive(int a) {
+    private static void printNegativeOrPositive(int a) {
         if (a >= 0)
             System.out.println("Число " + a + " положительное");
         else
@@ -59,7 +59,7 @@ public class Main {
     Задача №5 Написать метод, которому в качестве параметра передается целое число,
     метод должен вернуть true, если число отрицательное;
      */
-    public static boolean isNegative(int a) {
+    private static boolean isNegative(int a) {
         return a <= 0;
     }
 
@@ -67,7 +67,7 @@ public class Main {
     Задача №6 Написать метод, которому в качестве параметра передается строка, обозначающая имя,
     метод должен вывести в консоль сообщение «Привет, указанное_имя!»;
      */
-    public static void printName(String name) {
+    private static void printName(String name) {
         System.out.println("Привет, " + name + "!");
     }
 
@@ -75,7 +75,7 @@ public class Main {
     Задача №7 Написать метод, который определяет является ли год високосным, и выводит сообщение в консоль.
     Каждый 4-й год является високосным, кроме каждого 100-го, при этом каждый 400-й – високосный.
      */
-    public static void leapYear(int year) {
+    private static void leapYear(int year) {
 //        boolean isLeap = isLeapYear(year);
         if (year % 400 == 0 || (year % 4 == 0 && year % 100 != 0)) {
             System.out.print(year + " это год високосный\n");
