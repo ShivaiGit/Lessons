@@ -1,6 +1,6 @@
 package lesson3;
 
-/*Игра угадай число*/
+/*Игра "Угадай число"*/
 
 import java.util.Random;
 import java.util.Scanner;
@@ -17,10 +17,10 @@ public class Main {
         final int MAX_NUMBER = 10;
         int randomNumber = random.nextInt(MAX_NUMBER);
         final int NUMBER_OF_ATTEMPTS = 3;
-        int userNumber;
 
         System.out.println("Угадай число");
         for (int i = 0; i < NUMBER_OF_ATTEMPTS; i++) {
+            int userNumber;
             System.out.println("Введите число от 0 до " + MAX_NUMBER + " - ");
             System.out.printf("Попытка номер %d.%n", i + 1);
             while (true) {
@@ -38,7 +38,7 @@ public class Main {
             }
             System.out.println("Вы не угадали!");
         }
-        System.out.println("Попытки закончилсиь! Вы проиграли!\n Хотите сыграть ещё раз? Если да то введите цифру - 1 ");
+        System.out.println("Попытки закончилсиь! Вы проиграли!\n Если хотите сыграть ещё раз то введите цифру - 1 ");
         if (scanner.hasNextInt()) {
             int tryAgain = scanner.nextInt();
             if (tryAgain == 1) {
